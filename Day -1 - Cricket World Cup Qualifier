@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int points;
+
+    cout << "Enter the team's points in group stage matches: ";
+    cin >> points;
+
+    if (points >= 12) {
+        cout << "Yes" << endl;
+    } else {
+        cout << "No" << endl;
+    }
+
+    return 0;
+}
