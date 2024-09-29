@@ -1,0 +1,16 @@
+import math
+
+def min_total_cost(N, X):
+  
+    subscriptions_needed = math.ceil(N / 6)
+    
+
+    total_cost = subscriptions_needed * X
+    
+    return total_cost
+
+
+N = int(input("Enter the number of friends: "))
+X = int(input("Enter the cost of one subscription: "))
+print("The minimum total cost is:", min_total_cost(N, X))
+
