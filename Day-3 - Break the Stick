@@ -1,0 +1,17 @@
+def can_obtain_stick(N, X):
+    
+    if X > N:
+        return False
+    
+    if (N % 2) != (X % 2):
+        return False
+    
+    return True
+
+
+N = 11
+X = 3
+if can_obtain_stick(N, X):
+    print(f"Yes, Chef can obtain a stick of length {X} from a stick of length {N}.")
+else:
+    print(f"No, Chef cannot obtain a stick of length {X} from a stick of length {N}.")
