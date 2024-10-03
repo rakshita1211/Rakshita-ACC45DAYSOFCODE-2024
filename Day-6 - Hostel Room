@@ -1,0 +1,17 @@
+def max_people_in_room(X, A):
+    current_people = X  
+    max_people = X      
+    
+    for event in A:
+        current_people += event  
+        
+        if current_people > max_people:
+            max_people = current_people
+    
+    return max_people
+
+
+X = 5  
+A = [3, -2, 4, -1]  
+
+print("Maximum number of people in the room:", max_people_in_room(X, A))
