@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int X;  
+       cin >> X;  
+
+    int totalAssignments = 3;
+    int timePerAssignment = 1; 
+    int deadline = 10;  
+    
+   
+    if (X + totalAssignments * timePerAssignment <= deadline) {
+       cout << "Yes" << endl;
+    } else {
+       cout << "No" << endl;
+    }
+
+    return 0;
+}
