@@ -1,0 +1,21 @@
+P = int(input("Enter the profit of company A (in lakh rupees): "))
+Q = int(input("Enter the profit of company B (in lakh rupees): "))
+R = int(input("Enter the profit of company C (in lakh rupees): "))
+S = int(input("Enter the profit of company D (in lakh rupees): "))
+
+
+def check_monopoly(P, Q, R, S):
+    if P > Q + R + S:
+        return "Company A has a monopoly"
+    elif Q > P + R + S:
+        return "Company B has a monopoly"
+    elif R > P + Q + S:
+        return "Company C has a monopoly"
+    elif S > P + Q + R:
+        return "Company D has a monopoly"
+    else:
+        return "No company has a monopoly"
+
+
+result = check_monopoly(P, Q, R, S)
+print(result)
