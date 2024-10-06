@@ -1,0 +1,14 @@
+def max_rent_months(X, Y):
+    
+    if X >= Y:
+        return 0  
+        
+    else:
+        return (Y // X) - 1
+
+
+X = int(input("Enter the monthly rental cost (X): "))
+Y = int(input("Enter the purchase cost (Y): "))
+
+result = max_rent_months(X, Y)
+print("Maximum number of months Chef can rent the cooler:", result)
