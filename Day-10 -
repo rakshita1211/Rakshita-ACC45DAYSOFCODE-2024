@@ -1,0 +1,15 @@
+def can_measure_weight(W, X, Y, Z):
+
+    if W in [X, Y, Z, X+Y, X+Z, Y+Z, X+Y+Z]:
+        print("YES")
+    else:
+        print("NO")
+
+
+W = int(input("Enter the weight of the object W: "))
+X = int(input("Enter the weight X: "))
+Y = int(input("Enter the weight Y: "))
+Z = int(input("Enter the weight Z: "))
+
+
+can_measure_weight(W, X, Y, Z)
