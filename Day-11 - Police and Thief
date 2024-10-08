@@ -1,0 +1,14 @@
+def catch_thief(X, Y):
+    
+    distance = abs(X - Y)
+    
+    
+    time_to_catch = distance
+    
+    return time_to_catch
+
+
+X = int(input("Enter the initial position of the policeman (X): "))
+Y = int(input("Enter the initial position of the thief (Y): "))
+
+print("The minimum time to catch the thief is:", catch_thief(X, Y), "seconds")
