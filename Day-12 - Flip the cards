@@ -1,0 +1,11 @@
+def min_operations_to_same_direction(N, X):
+    
+    
+    face_down = N - X  
+    
+    return min(X, face_down)
+
+
+N = 10  
+X = 3   
+print(min_operations_to_same_direction(N, X))  
