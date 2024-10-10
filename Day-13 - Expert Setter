@@ -1,0 +1,13 @@
+def is_expert(X, Y):
+   
+    if Y >= 0.5 * X:
+        return "Yes, Munchy is an expert"
+    else:
+        return "No, Munchy is not an expert"
+
+
+X = int(input("Enter the number of problems submitted: "))
+Y = int(input("Enter the number of problems approved: "))
+
+
+print(is_expert(X, Y))
