@@ -1,0 +1,11 @@
+N = int(input("Enter the amount of pulp (in kg): "))
+
+pages_per_kg = 1000  
+pages_per_notebook = 100  
+
+total_pages = N * pages_per_kg
+
+
+notebooks = total_pages // pages_per_notebook
+
+print("Total number of notebooks that can be made:", notebooks)
