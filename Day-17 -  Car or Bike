@@ -1,0 +1,10 @@
+X = int(input("Enter time taken by Bike (in minutes): "))
+Y = int(input("Enter time taken by Car (in minutes): "))
+
+
+if X < Y:
+    print("Bike is faster.")
+elif X > Y:
+    print("Car is faster.")
+else:
+    print("Both take the same time.")
