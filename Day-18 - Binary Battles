@@ -1,0 +1,18 @@
+def total_time(N, A, B):
+    rounds = 0
+    teams = N
+
+    while teams > 1:
+        teams //= 2
+        rounds += 1
+
+    total_time = A * rounds + B * (rounds - 1)
+    
+    return total_time
+
+N = 4  
+A = 10  
+B = 5   
+
+result = total_time(N, A, B)
+print(f"Total time for the tournament: {result} minutes")
