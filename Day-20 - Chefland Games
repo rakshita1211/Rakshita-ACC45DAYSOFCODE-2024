@@ -1,0 +1,11 @@
+def is_ball_in(referee_decisions):
+    
+    if all(decision == 1 for decision in referee_decisions):
+        return "IN"
+    else:
+        return "OUT"
+
+referee_decisions = list(map(int, input("Enter the decisions of 4 referees (1 for IN, 0 for OUT): ").split()))
+
+result = is_ball_in(referee_decisions)
+print(result)
