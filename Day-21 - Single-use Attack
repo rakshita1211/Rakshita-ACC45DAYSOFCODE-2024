@@ -1,0 +1,19 @@
+def min_attacks(H, X, Y):
+    
+    if Y > X:
+        
+        H -= Y
+        
+        if H <= 0:
+            return 1
+        
+        remaining_attacks = (H + X - 1) // X  
+        return 1 + remaining_attacks  
+    else:
+        
+        return (H + X - 1) // X  
+H = 100  
+X = 10   
+Y = 50   
+
+print(min_attacks(H, X, Y))  
