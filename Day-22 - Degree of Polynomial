@@ -1,0 +1,18 @@
+def find_degree_of_polynomial(N, coefficients):
+    
+    degree = -1
+
+    for i in range(N):
+        
+        if coefficients[i] != 0:
+            
+            degree = i
+    
+    return degree
+
+N = int(input("Enter the number of terms: "))
+coefficients = list(map(int, input("Enter the coefficients: ").split()))
+
+degree = find_degree_of_polynomial(N, coefficients)
+
+print("The degree of the polynomial is:", degree)
