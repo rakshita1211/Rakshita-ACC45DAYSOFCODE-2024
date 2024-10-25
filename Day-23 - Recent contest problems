@@ -1,0 +1,14 @@
+N = int(input("Enter the number of contests: "))
+contest_codes = [input("Enter contest code (START38 or LTIME108): ") for _ in range(N)]
+
+start38_count = 0
+ltime108_count = 0
+
+for code in contest_codes:
+    if code == "START38":
+        start38_count += 1
+    elif code == "LTIME108":
+        ltime108_count += 1
+
+print("START38:", start38_count)
+print("LTIME108:", ltime108_count)
