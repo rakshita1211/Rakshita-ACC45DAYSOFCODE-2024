@@ -1,0 +1,15 @@
+def count_tuesdays(N):
+    
+    full_weeks = N // 7
+    
+    remaining_days = N % 7
+
+    tuesday_count = full_weeks
+
+    if remaining_days >= 2:
+        tuesday_count += 1
+
+    return tuesday_count
+
+N = int(input("Enter the number of spooky days until Halloween: "))
+print(f"Dracula can enjoy his favorite menu on {count_tuesdays(N)} Tuesdays.")
