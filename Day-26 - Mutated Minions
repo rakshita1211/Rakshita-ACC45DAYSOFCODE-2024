@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int N, K;
+    cout << "Enter the number of minions (N) and the transmogrifier value (K): ";
+    cin >> N >> K;
+
+    vector<int> characteristics(N);
+    cout << "Enter the characteristic values of the minions:" << endl;
+    for (int i = 0; i < N; i++) {
+        cin >> characteristics[i];
+    }
+
+    int count = 0;
+    for (int i = 0; i < N; i++) {
+        
+        if ((characteristics[i] + K) % 7 == 0) {
+            count++;
+        }
+    }
+
+    cout << "Number of Wolverine-like mutated minions: " << count << endl;
+
+    return 0;
+}
