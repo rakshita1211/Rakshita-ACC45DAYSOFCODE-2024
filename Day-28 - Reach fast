@@ -1,0 +1,16 @@
+def min_steps_to_reach(A, B, K):
+    distance = abs(B - A)
+    if K == 0:
+        return 0 if distance == 0 else -1
+    else:
+        return (distance + K - 1) // K
+
+A = int(input("Enter Chef's coordinate (A): "))
+B = int(input("Enter Chefina's coordinate (B): "))
+K = int(input("Enter the maximum step size (K): "))
+
+steps = min_steps_to_reach(A, B, K)
+if steps == -1:
+    print("Chef cannot reach Chefina.")
+else:
+    print(f"Minimum steps required: {steps}")
