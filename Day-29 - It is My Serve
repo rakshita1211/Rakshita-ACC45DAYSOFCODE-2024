@@ -1,0 +1,16 @@
+def find_server(P, Q):
+    total_points = P + Q
+    
+    cycle_position = (total_points // 2) % 2
+    
+    
+    if cycle_position == 0:
+        return "Alice"
+    else:
+        return "Bob"
+
+
+P = int(input("Enter points scored by Alice: "))
+Q = int(input("Enter points scored by Bob: "))
+print("Current server:", find_server(P, Q))
+
