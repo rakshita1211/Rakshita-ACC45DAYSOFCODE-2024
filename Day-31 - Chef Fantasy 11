@@ -1,0 +1,5 @@
+def count_choices(N):
+    return N * (N - 1)
+
+N = int(input("Enter the number of players Chef is considering for captain and vice-captain roles: "))
+print("Number of different choices Chef has:", count_choices(N))
