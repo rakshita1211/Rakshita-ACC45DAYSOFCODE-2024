@@ -1,0 +1,29 @@
+import math
+def sieve(limit):
+    is_prime = [True] * (limit + 1)
+    primes = []
+    for num in range(2, limit + 1):
+        if is_prime[num]:
+            primes.append(num)
+            for multiple in range(num * num, limit + 1, num):
+                is_prime[multiple] = False
+    return primes
+
+def generate_primes(a, b):
+    limit = int(math.sqrt(b)) + 1
+    base_primes = sieve(limit)
+    is_prime_in_range = [True] * (b - a + 1)
+
+    for prime in base_primes:
+        start = max(prime * prime, a + (prime - a % prime) % prime)
+        for multiple in range(start, b + 1, prime):
+            is_prime_in_range[multiple - a] = False
+
+    primes_in_range = [num for num, is_prime in zip(range(a, b + 1), is_prime_in_range) if is_prime and num > 1]
+    return primes_in_range
+
+a = int(input("Enter the start of range: "))
+b = int(input("Enter the end of range: "))
+
+primes = generate_primes(a, b)
+print("Prime numbers between", a, "and", b, "are:", primes)
