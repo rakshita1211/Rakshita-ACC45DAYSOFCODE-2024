@@ -1,0 +1,9 @@
+def is_good_program(N):
+    if N % 4 == 0:
+        return "Good"
+    else:
+        return "Not Good"
+
+N = int(input("Enter the number of bits: "))
+print(is_good_program(N))
+
