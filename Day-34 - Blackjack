@@ -1,0 +1,13 @@
+def third_number_for_win(A, B):
+    
+    required_third_number = 21 - (A + B)
+    
+    if 1 <= required_third_number <= 10:
+        return required_third_number
+    else:
+        return -1
+
+A = int(input("Enter the first number: "))
+B = int(input("Enter the second number: "))
+result = third_number_for_win(A, B)
+print("The third number needed for a win:", result)
