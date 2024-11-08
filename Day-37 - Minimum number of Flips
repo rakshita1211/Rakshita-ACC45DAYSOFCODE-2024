@@ -1,0 +1,13 @@
+def min_operations_to_zero_sum(N, A):
+    total_sum = sum(A)
+    
+    if total_sum % 2 != 0:
+        return -1
+    
+    operations = abs(total_sum) // 2
+    return operations
+
+N = int(input("Enter the length of array: "))
+A = list(map(int, input("Enter the elements of the array (1 or -1 only): ").split()))
+
+print(min_operations_to_zero_sum(N, A)) 
