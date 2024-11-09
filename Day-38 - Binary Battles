@@ -1,0 +1,15 @@
+def total_time_to_finish(N, A, B):
+    total_time = 0
+    rounds = 0
+    
+    while N > 1:
+        rounds += 1
+        N //= 2
+
+    total_time = (rounds - 1) * B + rounds * A
+    return total_time 
+
+N = 4  
+A = 10 
+B = 5  
+print("Total time:", total_time_to_finish(N, A, B))
