@@ -1,0 +1,13 @@
+def is_cyclic_quadrilateral(A, B, C, D):
+    
+    return (A + C == 180) and (B + D == 180)
+
+A = int(input("Enter angle A: "))
+B = int(input("Enter angle B: "))
+C = int(input("Enter angle C: "))
+D = int(input("Enter angle D: "))
+
+if is_cyclic_quadrilateral(A, B, C, D):
+    print("Yes, the quadrilateral is cyclic.")
+else:
+    print("No, the quadrilateral is not cyclic.")
