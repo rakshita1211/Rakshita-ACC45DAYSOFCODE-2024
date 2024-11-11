@@ -1,0 +1,9 @@
+def total_watching_time(X, Y):
+    time_first_part = Y / 2
+    time_remaining_part = X - Y
+    total_time = time_first_part + time_remaining_part
+    return total_time
+
+X = int(input("Enter total movie duration (X): "))
+Y = int(input("Enter the first part duration (Y): "))
+print("Total time Chef spends watching the movie:", total_watching_time(X, Y))
