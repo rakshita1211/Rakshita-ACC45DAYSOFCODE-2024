@@ -1,0 +1,8 @@
+def max_people_can_bathe(X, Y):
+    water_per_person = 2 * Y
+    max_people = X // water_per_person
+    return max_people
+
+X = int(input("Enter the geyser capacity in liters (X): "))
+Y = int(input("Enter the bucket capacity in liters (Y): "))
+print("Maximum number of people who can take a bath:", max_people_can_bathe(X, Y))
