@@ -1,0 +1,10 @@
+ef amount_to_pay(A, B, C):
+    total_cost = A + B + C
+    lowest_price = min(A, B, C)
+    amount_to_pay = total_cost - lowest_price
+    return amount_to_pay
+
+A = int(input("Enter the price of the first item (A): "))
+B = int(input("Enter the price of the second item (B): "))
+C = int(input("Enter the price of the third item (C): "))
+print("The amount Chef needs to pay:", amount_to_pay(A, B, C))    
