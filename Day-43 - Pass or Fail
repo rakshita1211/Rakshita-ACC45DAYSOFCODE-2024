@@ -1,0 +1,15 @@
+def can_pass_exam(N, X, P):
+    correct_score = 3 * X
+    incorrect_score = -1 * (N - X)
+    total_score = correct_score + incorrect_score
+    
+    return total_score >= P
+
+N = int(input("Enter the total number of questions (N): "))
+X = int(input("Enter the number of correct answers (X): "))
+P = int(input("Enter the passing score (P): "))
+
+if can_pass_exam(N, X, P):
+    print("Yes, Chef will pass the exam.")
+else:
+    print("No, Chef will not pass the exam.")
