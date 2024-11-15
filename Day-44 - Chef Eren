@@ -1,0 +1,14 @@
+def calculate_total_duration(N, A, B):
+    odd_count = (N + 1) // 2  
+    even_count = N // 2       
+    
+    total_duration = (odd_count * B) + (even_count * A)
+    return total_duration
+
+def main():
+    T = int(input("Enter the number of test cases: "))
+    for _ in range(T):
+        N, A, B = map(int, input("Enter N, A, and B: ").split())
+        print(calculate_total_duration(N, A, B))
+
+main()
