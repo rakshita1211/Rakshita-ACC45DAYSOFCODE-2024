@@ -1,0 +1,8 @@
+def minimum_coins(N):
+    free_gifts = N // 5
+    coins_needed = N - free_gifts
+    return coins_needed
+    
+if __name__ == "__main__":
+    N = int(input("Enter the number of gifts Chef wants to buy: "))
+    print("Minimum coins required:", minimum_coins(N))
